@@ -1,0 +1,33 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - "v10.13.0"
+
+env:
+ global:
+    - export COVERALLS_REPO_TOKEN=H7GGlVB1dN93IcOsYv5VuJnRvn5UPZvjS
+    - export NODE_ENV=test
+    - export TEST_DB_USER=wbzimxdz
+    - export TEST_DB_PASSWORD=L3V49M57mD-0qYdyhZ_pz0fgMtssa4tb
+    - export TEST_DB_DATABASE=wbzimxdz
+    - export TEST_DB_HOST=lallah.db.elephantsql.com
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - npm config set spin false
+  - npm install -g standard
+
+before_script:
+  - npx sequelize-cli db:migrate:undo
+  - npx sequelize-cli db:migrate
+
+script:
+  - npm run test:cover
+
+after_success:
+- npm run coveralls
