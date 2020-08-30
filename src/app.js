@@ -2,6 +2,7 @@ import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
 import path from 'path';
+import router from './routes';
 
 
 const app = express();
@@ -21,6 +22,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.resolve('./docs/index.html'));
 });
 
+app.use('/api/v1/', router);
 
 app.all('*', (err, req, res, next) => {
   if (!err) return next();
