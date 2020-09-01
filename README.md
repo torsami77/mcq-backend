@@ -22,6 +22,11 @@ ___
 ### INTEGRATION
 - Clone or download this repository.
 - npm install - Install dependencies for the app
+- Go to src/database/config/config.js to set database variables
+- Set process.env.SECRET
+- Create a sendgrid.com email API and set it to process.env.SENDGRID_API_KEY
+- npm run migrate - To run migrations
+- npm run seed - To seed database with questions
 - npm run start:dev - To run app in dev mode (Port: 3000)
 - npm start - To run app in production 
 ___
