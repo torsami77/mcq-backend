@@ -11,7 +11,7 @@ https://www.mbarendezvous.com/reading-comprehension-passages/#with%20answers
 ## NB: 
 - Mock questions are repeated to make up for required 10
 - All right answers are represented in option_1 column of questions table
-
+___
 ### TECHNOLOGY USED
 + Back End: Node.JS, NPM, Express
 + Libraries: jsonwebtoken, ES6, Babel, eslint, Jet/Chai, Sequelize, etc
