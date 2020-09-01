@@ -25,6 +25,7 @@ before_install:
 before_script:
   - npx sequelize-cli db:migrate:undo
   - npx sequelize-cli db:migrate
+  - npx sequelize-cli db:seed:all
 
 script:
   - npm run test:cover

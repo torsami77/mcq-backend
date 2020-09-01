@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
 
   Stories.associate = (models) => {
-    Stories.hasMany(models.Assessments, { as: 'questions', foreignKey: 'story_id' });
+    Stories.hasMany(models.Questions, { as: 'questions', foreignKey: 'story_id' });
   };
   return Stories;
 };

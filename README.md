@@ -3,9 +3,50 @@
 # MCQ-backend
 A Multiple Choice Question Platform
 
+**App's Instance and API Documentation:  https://quick-mcq-backend.herokuapp.com/**
+
 ## Seeded Questions and Answers from 
 https://www.mbarendezvous.com/reading-comprehension-passages/#with%20answers
 
 ## NB: 
 - Mock questions are repeated to make up for required 10
 - All right answers are represented in option_1 column of questions table
+
+### TECHNOLOGY USED
++ Back End: Node.JS, NPM, Express
++ Libraries: jsonwebtoken, ES6, Babel, eslint, Jet/Chai, Sequelize, etc
++ Database: PostgreSQL
++ CI/CD: Travis, Coveralls, Codacy
++ API Documentation: Swagger
+___
+### INTEGRATION
+- Clone or download this repository.
+- npm install - Install dependencies for the app
+- npm run start:dev - To run app in dev mode (Port: 3000)
+- npm start - To run app in production 
+___
+
+# User Stories
+## Authentication
+	- Sign up
+	- Sign in
+	- Password reset request
+	- Password Creation
+	- Log out
+
+## Assessments
+	- View assessment score history -- Partially Completed
+	- Take exams
+	- View instructions
+	- Randomly fetch and view 2 passages with 10 questions each from seeded database.
+	- Randomly display 4 objective answers in each fetched question
+	- Set timer (timeout & intervals)
+	- Injury time UX
+	- Time up UX
+	- Substitution UX
+	---incomplete
+	- Sum each correct answer by 5 points to compute 75 passing mark
+	- Passed and failed score UX
+
+___
+#Thank you
