@@ -13,21 +13,21 @@
         "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
       }
     },
-    "host": "https://quick-mcq-backend.herokuapp.com/",
+    "host": "quick-mcq-backend.herokuapp.com/",
     "basePath": "api/v1",
     "tags": [
       {
         "name": "user",
         "description": "Operations about user",
         "externalDocs": {
-          "description": "Authentication stories",
+          "description": "Authentication stories"
         }
       },
       {
-        "name": "assessments",
+        "name": "assessment",
         "description": "Operations about assessments",
         "externalDocs": {
-          "description": "Assessments stories",
+          "description": "Assessments stories"
         }
       }
     ],
@@ -36,7 +36,7 @@
       "http"
     ],
     "paths": {
-      "api/v1/exams/write-exams": {
+      "/exams/write-exams": {
         "get": {
           "tags": [
             "assessment"
@@ -76,7 +76,7 @@
       },
 
 
-      "api/v1/users/forgotpassword": {
+      "/users/forgotpassword": {
         "post": {
           "tags": [
             "user"
@@ -146,7 +146,7 @@
           }
         }
       },
-      "api/v1/users/signin": {
+      "/users/signin": {
         "post": {
           "tags": [
             "user"
@@ -198,7 +198,7 @@
           }
         }
       },
-      "api/v1/users/signup": {
+      "/users/signup": {
         "post": {
           "tags": [
             "user"
