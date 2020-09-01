@@ -18,6 +18,8 @@ app.use(
 );
 app.use(express.static('./docs'));
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 app.get('/', (req, res) => {
   res.sendFile(path.resolve('./docs/index.html'));
 });
