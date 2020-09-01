@@ -3,7 +3,8 @@
 # MCQ-backend
 A Multiple Choice Question Platform
 
-**App's Instance and API Documentation:  https://quick-mcq-backend.herokuapp.com/**
+**App Instance and API Documentation:  https://quick-mcq-backend.herokuapp.com/**
+___
 
 ## Seeded Questions and Answers from 
 https://www.mbarendezvous.com/reading-comprehension-passages/#with%20answers
